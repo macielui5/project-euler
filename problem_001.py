@@ -14,7 +14,7 @@ for num in natural:
 
 # Sum of multiples is 23
 print(sum(multiples))
-"""
+
 
 # Sum of all the multiples of 3 or 5 below 1000
 natural = list(range(1,1000))
@@ -23,3 +23,10 @@ for num in natural:
     if num %3 ==0 or num%5 ==0:
         multiples.append(num)
 print(sum(multiples))
+"""
+
+total = 0
+for num in range(1, 1000):
+    if num % 3 == 0 or num % 5 == 0:
+        total += num
+print(total)
